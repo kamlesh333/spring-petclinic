@@ -127,7 +127,8 @@
 </dependency>
   </dependencies>
 
-  <plugins>
+  <build>
+    <plugins>
       <plugin>
         <groupId>io.spring.javaformat</groupId>
         <artifactId>spring-javaformat-maven-plugin</artifactId>

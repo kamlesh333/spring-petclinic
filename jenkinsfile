@@ -22,7 +22,7 @@ def mvnHome = tool name: 'Maven_3', type: 'maven'
 
     stage('Checkout SCM'){
 
-        git branch: 'master', credentialsId: 'github-creds', url: 'https://github.com/gouthamchilakala/PetClinic'
+        git branch: 'main', credentialsId: 'github-creds', url: 'https://github.com/gouthamchilakala/PetClinic'
 
     }
 

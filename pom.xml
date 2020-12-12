@@ -124,6 +124,33 @@
   <build>
     <plugins>
       <plugin>
+          <groupId>org.jfrog.buildinfo</groupId>
+          <artifactId>artifactory-maven-plugin</artifactId>
+          <version>3.0.0</version>
+          <inherited>false</inherited>
+          <executions>
+              <execution>
+                  <id>build-info</id>
+                  <goals>
+                      <goal>publish</goal>
+                  </goals>
+                  <configuration>
+                      <deployProperties>
+                          <gradle>awesome</gradle>
+                          <review.team>qa</review.team>
+                      </deployProperties>
+                      <publisher>
+                          <contextUrl>https://kamlesh.jfrog.io/artifactory/petclinic-maven/</contextUrl>
+                          <username>kshahcloud@gmail.com</username>
+                          <password>Bhallu@1998</password>
+                          <repoKey>libs-release-local</repoKey>
+                          <snapshotRepoKey>libs-snapshot-local</snapshotRepoKey>
+                      </publisher>
+                  </configuration>
+              </execution>
+          </executions>
+      </plugin>
+      <plugin>
         <groupId>io.spring.javaformat</groupId>
         <artifactId>spring-javaformat-maven-plugin</artifactId>
         <version>${spring-format.version}</version>

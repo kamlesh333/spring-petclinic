@@ -146,9 +146,7 @@
                           <review.team>qa</review.team>
                       </deployProperties>
                       <publisher>
-                          <contextUrl>https://kamlesh.jfrog.io/artifactory/petclinic-maven/</contextUrl>
-                          <username>kshahcloud@gmail.com</username>
-                          <password>Bhallu@1998</password>
+                          <contextUrl>https://oss.jfrog.org/</contextUrl>
                           <repoKey>libs-release-local</repoKey>
                           <snapshotRepoKey>libs-snapshot-local</snapshotRepoKey>
                       </publisher>

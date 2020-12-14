@@ -119,12 +119,6 @@
       <artifactId>spring-boot-devtools</artifactId>
       <optional>true</optional>
     </dependency>
-    // <dependency>
-	    // <groupId>org.jfrog.buildinfo</groupId>
-	    //<artifactId>artifactory-maven-plugin</artifactId>
-	    //<version>3.0.0</version>
-	    //<type>pom</type>
-	    //</dependency>
   </dependencies>
 
   <build>
@@ -144,7 +138,7 @@
                       <deployProperties>
                           <gradle>awesome</gradle>
                           <review.team>qa</review.team>
-                      </deployPromeperties>
+                      </deployProperties>
                       <publisher>
                           <contextUrl>https://oss.jfrog.org/</contextUrl>
 			  <username> kshahcloud@gmail.com </username>

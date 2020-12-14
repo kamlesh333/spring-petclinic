@@ -144,9 +144,11 @@
                       <deployProperties>
                           <gradle>awesome</gradle>
                           <review.team>qa</review.team>
-                      </deployProperties>
+                      </deployPromeperties>
                       <publisher>
                           <contextUrl>https://oss.jfrog.org/</contextUrl>
+			  <username> kshahcloud@gmail.com </username>
+			  <password> Bhallu@1998</password>
                           <repoKey>libs-release-local</repoKey>
                           <snapshotRepoKey>libs-snapshot-local</snapshotRepoKey>
                       </publisher>

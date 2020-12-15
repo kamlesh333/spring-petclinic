@@ -149,8 +149,6 @@
                       </deployProperties>
                       <publisher>
 	                  <contextUrl>https://kamlesh.jfrog.io/artifactory/petclinic-maven/</contextUrl>
-			  <username> kshahcloud@gmail.com </username>
-			  <password> Bhallu@1998</password>
                           <repoKey>libs-release-local</repoKey>
                           <snapshotRepoKey>libs-snapshot-local</snapshotRepoKey>
                       </publisher>

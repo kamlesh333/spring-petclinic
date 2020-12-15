@@ -119,16 +119,18 @@
       <artifactId>spring-boot-devtools</artifactId>
       <optional>true</optional>
     </dependency>
-      <dependency>
+    <!-- <dependency>
          <groupId>org.jfrog.buildinfo</groupId>
 	 <artifactId>artifactory-maven-plugin</artifactId>
 	 <version>3.0.0</version>
 	 <type>pom</type>
 	</dependency>
+    -->
   </dependencies>
 
   <build>
     <plugins>
+	    <!--
        <plugin>
           <groupId>org.jfrog.buildinfo</groupId>
           <artifactId>artifactory-maven-plugin</artifactId>
@@ -156,6 +158,7 @@
               </execution>
           </executions>
         </plugin>
+	    -->
       <plugin>
         <groupId>io.spring.javaformat</groupId>
         <artifactId>spring-javaformat-maven-plugin</artifactId>
@@ -326,6 +329,18 @@
       </snapshots>
     </repository>
   </repositories>
+<distributionManagement>
+    <repository>
+        <id>central</id>
+        <name>kamlesh-releases</name>
+        <url>https://kamlesh.jfrog.io/artifactory/kamlesh-libs-release</url>
+    </repository>
+    <snapshotRepository>
+        <id>snapshots</id>
+        <name>kamlesh-snapshots</name>
+        <url>https://kamlesh.jfrog.io/artifactory/kamlesh-libs-release</url>
+    </snapshotRepository>
+</distributionManagement>
 
   <pluginRepositories>
     <pluginRepository>
